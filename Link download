@@ -1,0 +1,16 @@
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/status.conf
+
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/getNginxInfo.py
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/discoveryPoolPhp-fpm.py
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/fcgi.pl
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/listItemPhp-fpm.py
+
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/userparameter_redis2.conf
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/userparameter_nginx.conf
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/userparameter_php-fpm.conf
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/userparameter_socket.conf
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/userparameter_mongodb.conf
+
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/discovery.py
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/infoDatabase.py
+wget https://raw.githubusercontent.com/hungpt91/Scripts/master/serverStatus.py
