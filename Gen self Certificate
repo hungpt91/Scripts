@@ -1,0 +1,15 @@
+# Generate DH params
+openssl dhparam -out dh2048.pem 2048
+
+# Generate CA key/cert
+openssl req -x509 -newkey rsa:2048 -keyout ca.key -out ca.crt
+
+# Generate server key/cert
+openssl req -new -nodes -keyout server.key -out server.csr
+
+# Generate user key/cert
+openssl req -newkey rsa:2048 -keyout client1.key -out client1.csr
+
+# Sign keys
+openssl x509 -req -days 3650 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
+openssl x509 -req -days 3650 -in client1.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client1.crt
