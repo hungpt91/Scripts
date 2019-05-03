@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash x
 sudo -n true
 if [ $? -ne 0 ]
 then
