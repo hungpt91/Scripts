@@ -9,8 +9,8 @@ fi
 sudo pgrep filebeat
 if [ $? -ne 0 ]
 then 
-    wget --directory-prefix=/opt/ https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.1.1-x86_64.rpm
-    sudo rpm -vi /opt/filebeat-7.1.1-x86_64.rpm
+    wget --directory-prefix=/opt/ https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.2-x86_64.rpm
+    sudo rpm -vi /opt/filebeat-7.4.2-x86_64.rpm
     sudo cat >/etc/filebeat/filebeat.yml <<EOF
 filebeat.inputs:
 - type: log
