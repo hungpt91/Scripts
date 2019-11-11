@@ -23,7 +23,7 @@ filebeat.inputs:
     - /var/log/cron  
 ### ( NOI DUNG THEM CHO ĐƯỜNG DẪN FIREWALL và SERVICES TRONG /VAR/LOG/[NAME_SERVICE]/*.log)
 #   Log kernel
-#    - /var/log/kern
+    - /var/log/kern
 #   Log firewalld trên centos 7
 #    - /var/log/firewalld
 #   Log iptables tren centos 6
@@ -52,7 +52,7 @@ filebeat.inputs:
     - /var/log/cron  
 ### ( NOI DUNG THEM CHO ĐƯỜNG DẪN FIREWALL và SERVICES TRONG /VAR/LOG/[NAME_SERVICE]/*.log)
 #   Log kernel
-#    - /var/log/kern
+    - /var/log/kern
 #   Log firewalld trên centos 7
 #    - /var/log/firewalld
 #   Log iptables tren centos 6
