@@ -17,7 +17,7 @@ filebeat.inputs:
   enabled: true
   paths:
     - /var/log/secure
-    - /var/log/message
+    - /var/log/messages
     - /var/log/boot.log 
     - /var/log/yum.log
     - /var/log/cron  
