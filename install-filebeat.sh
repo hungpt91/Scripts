@@ -29,6 +29,10 @@ filebeat.inputs:
 #   Log iptables tren centos 6
 #    - /var/log/iptables
 #    - /var/log/nginx/*.log
+## Set thong tin he thong server thuoc ve  
+  fields:
+    system: Docker-Swarm
+
 processors:
 - drop_fields:
     fields: ["type", "beat", "prospector", "input", "offset"]
@@ -58,6 +62,10 @@ filebeat.inputs:
 #   Log iptables tren centos 6
 #    - /var/log/iptables
 #    - /var/log/nginx/*.log
+## Set thong tin he thong server thuoc ve  
+  fields:
+    system: Docker-Swarm
+    
 processors:
 - drop_fields:
     fields: ["type", "beat", "prospector", "input", "offset"]
