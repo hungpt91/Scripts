@@ -30,8 +30,15 @@ filebeat.inputs:
 #    - /var/log/iptables
 #    - /var/log/nginx/*.log
 ## Set thong tin he thong server thuoc ve  
+#  fields:
+#    system: Docker-Swarm
+
+## Set type other logs
+- type: log
+  paths:
+    - /var/log/mariadb/error.log                                                                                             
   fields:
-    system: Docker-Swarm
+    type: mysql_db     
 
 processors:
 - drop_fields:
@@ -63,9 +70,16 @@ filebeat.inputs:
 #    - /var/log/iptables
 #    - /var/log/nginx/*.log
 ## Set thong tin he thong server thuoc ve  
+#  fields:
+#    system: Docker-Swarm
+
+## Set type other logs
+- type: log
+  paths:
+    - /var/log/mariadb/error.log                                                                                             
   fields:
-    system: Docker-Swarm
-    
+    type: mysql_db  
+
 processors:
 - drop_fields:
     fields: ["type", "beat", "prospector", "input", "offset"]
