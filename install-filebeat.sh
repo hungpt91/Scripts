@@ -34,11 +34,15 @@ filebeat.inputs:
 #    system: Docker-Swarm
 
 ## Set type other logs
-- type: log
-  paths:
-    - /var/log/mariadb/error.log                                                                                             
-  fields:
-    type: mysql_db     
+#- type: log
+#  paths:
+#    - /var/log/mariadb/error.log                                                                                             
+#  fields:
+#    type: mysql_db   
+
+filebeat.config.modules:
+  enabled: true
+  path: /etc/filebeat/modules.d/*.yml
 
 processors:
 - drop_fields:
@@ -74,11 +78,15 @@ filebeat.inputs:
 #    system: Docker-Swarm
 
 ## Set type other logs
-- type: log
-  paths:
-    - /var/log/mariadb/error.log                                                                                             
-  fields:
-    type: mysql_db  
+#- type: log
+#  paths:
+#    - /var/log/mariadb/error.log                                                                                             
+#  fields:
+#    type: mysql_db 
+
+filebeat.config.modules:
+  enabled: true
+  path: /etc/filebeat/modules.d/*.yml
 
 processors:
 - drop_fields:
